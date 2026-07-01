@@ -1,0 +1,20 @@
+{
+  "name": "bqds",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "packageManager": "pnpm@9.15.9",
+  "scripts": {
+    "build:tokens": "pnpm --filter @bqds/tokens build",
+    "storybook": "pnpm build:tokens && storybook dev -p 6006",
+    "build-storybook": "pnpm build:tokens && storybook build"
+  },
+  "devDependencies": {
+    "@storybook/web-components": "^10.4.6",
+    "@storybook/web-components-vite": "^10.4.6",
+    "lit": "^3.2.1",
+    "storybook": "^10.4.6",
+    "typescript": "^5.7.3",
+    "vite": "^8.1.2"
+  }
+}

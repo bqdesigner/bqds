@@ -1,0 +1,17 @@
+{
+  "name": "@bqds/tokens",
+  "version": "0.0.0",
+  "type": "module",
+  "main": "dist/tokens.js",
+  "exports": {
+    ".": "./dist/tokens.js",
+    "./css": "./dist/tokens.css"
+  },
+  "files": ["dist"],
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "style-dictionary": "^4.3.3"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "color": {
+    "bg":             { "value": "{color.white}" },
+    "surface-hover":  { "value": "{color.gray.50}" },
+    "border":         { "value": "{color.gray.150}" },
+    "text-strong":    { "value": "{color.gray.900}" },
+    "text":           { "value": "{color.gray.800}" },
+    "text-secondary": { "value": "{color.gray.500}" },
+    "text-disabled":  { "value": "{color.gray.300}" },
+    "accent":         { "value": "{color.blue.500}" },
+    "on-accent":      { "value": "{color.white}" }
+  }
+}
