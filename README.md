@@ -73,11 +73,3 @@ localStorage.setItem('theme', next);
 ```
 
 No **Storybook**, use o toggle **Theme** (sol/lua) na toolbar pra alternar light/dark em qualquer story.
-
-## Consumir no portfolio (migração — fase posterior)
-
-1. Importar `packages/tokens/dist/tokens.css`.
-2. Substituir o `:root` de `css/core.css` pelos `--bq-*`.
-3. Trocar componentes um a um por `<bq-*>`.
-
-> Os nomes antigos do portfolio (`--color-dark`, `--color-accent`…) podem ganhar aliases mapeando pros `--bq-*` durante a transição, pra não quebrar o site de uma vez.
