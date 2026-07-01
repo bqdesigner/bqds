@@ -39,6 +39,17 @@ Duas camadas:
 
 Tema via atributo no `<html>`: `data-theme="dark"`.
 
+## Fontes
+
+Os tokens nomeiam a **mesma família do site**: `DM Sans` (`--bq-font-family-sans`) e `DM Mono` (`--bq-font-family-mono`). O DS **não empacota** a webfont — o app consumidor precisa carregá-la (o portfolio já faz, via Google Fonts). O Storybook carrega em `.storybook/preview-head.html`.
+
+```html
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet" />
+```
+
+Sem a webfont, cai no fallback (`system-ui` / `ui-monospace`).
+
 ## Dark mode
 
 O `tokens.css` já traz os dois temas: `:root` (light) + `[data-theme="dark"]`. Os componentes herdam automaticamente — os tokens semânticos (`--bq-color-*`) atravessam o shadow DOM. **Nenhuma mudança no componente é necessária.**

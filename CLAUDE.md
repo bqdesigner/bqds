@@ -23,6 +23,18 @@ Design System que serve o portfolio (site + blog) e projetos futuros. Vira repo 
 2. `pnpm build:tokens` → confere `--bq-*` em `dist/tokens.css`.
 3. Storybook recarrega via import do `dist/tokens.css`.
 
+## Fluxo de Git (OBRIGATÓRIO)
+
+**Nunca commitar/pushar direto na `main`.** Sempre:
+
+1. **Branch** a partir da `main` atualizada — `git checkout -b feat/<nome>` (ou `fix/`, `chore/`, `docs/`).
+2. Commitar na branch e `git push -u origin <branch>`.
+3. **Abrir PR** pra `main` — `gh pr create`.
+4. **Merge** só via PR (a `main` está protegida no GitHub — push direto é bloqueado).
+
+Convenção de branch: `feat/bq-card`, `fix/tag-padding`, `chore/ci`, `docs/audit`.
+Um componente/mudança por PR quando possível.
+
 ## Comandos
 
 ```bash
